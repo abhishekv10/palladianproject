@@ -104,7 +104,10 @@ video {
   margin: 0 auto;
   padding: 0 1.25rem;
 }
-
+span.burger-line {
+   color: white !important;
+   border: solid 2px;
+}
 .centered {
   text-align: center;
   vertical-align: middle;
@@ -255,7 +258,7 @@ a.menu-block:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   column-gap: 1.25rem;
   width: 100%;
   height: 4.25rem;
@@ -356,20 +359,21 @@ a.menu-block:hover {
 }
 
 .burger {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-  order: -1;
-  z-index: 10;
-  width: 1.6rem;
-  height: 1.15rem;
-  border: none;
-  outline: none;
-  background: none;
-  visibility: visible;
-  transform: rotate(0deg);
-  transition: 0.35s ease;
+   position: relative;
+   display: block;
+   cursor: pointer;
+   user-select: none;
+   order: -1;
+   z-index: 10;
+   width: 20px;
+   height: 30px;
+   padding: 1px 3px;
+   border: solid 2px white;
+   outline: none;
+   background: none;
+   visibility: visible;
+   transform: rotate(0deg);
+   transition: 0.35s ease;
 
   /* // Media Query Breakpoint */
   @media only screen and (min-width: 48rem) {
@@ -1936,7 +1940,7 @@ h2 {
  .fnc-slide__content {
    z-index: 2;
    position: absolute;
-   left: 40%;
+   left: 25%;
    top: 40%;
  }
  
@@ -2657,6 +2661,27 @@ h2 {
   .container {
     grid-template-columns: 1fr;
   }
+  nav.navbar img {
+   max-width: 190px !important;
+}
+.container1 {
+   display: contents !important;
+}
+.card {
+   width: 100% !important;
+}
+.card1 {
+   display: contents;
+}
+.footer-content-column {
+   margin-top: 20px;
+}
+.container-pe-quote.left {
+   left: 50px !important;
+}
+.fnc-slide__heading-line span {
+   font-size: 20px;
+}
   .contentLeft .row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2671,7 +2696,7 @@ h2 {
   }
 }
 .container1 {
-  width: 90%;
+  width: 100%;
   height: 100%;
   max-width: 1170px;
   display: grid;
